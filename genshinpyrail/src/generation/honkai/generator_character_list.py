@@ -141,7 +141,7 @@ class Creat:
         
     
     async def start(self, character_id = None):   
-        await git_file.change_Font(1)
+        await git_file.change_Font(0)
         self.t16 = await pill.get_font(16)
         self.t18 = await pill.get_font(18)
         if character_id is None:
