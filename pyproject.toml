@@ -6,10 +6,10 @@ authors = ["Deviant <deviantapi@gmail.com>"]
 
 [tool.poetry.dependencies]
 python = "^3.7"
-Pillow = "^10.0.1"
+Pillow = "^9.4.0"
 cachetools = "^5.2.0"
 genshin = "^1.6.2"
-pydantic = "1.10.13"
+pydantic = "^1.10.13"
 
 
 
