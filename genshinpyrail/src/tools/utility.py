@@ -135,7 +135,9 @@ async def get_element_genshin_img(element):
         return await of.gydro
 
 async def ups(x):
-    if x == 5:
+    if x == 6:
+        return "VI"
+    elif x == 5:
         return "V"
     elif x == 4:
         return "IV"
@@ -145,8 +147,10 @@ async def ups(x):
         return "II"
     elif x == 1:
         return "I"
-    else:
+    elif x == 0:
         return "0"
+    else:
+        return str(x)
 
 async def get_stars_raill(rank, style = 0):
     if style == 0:
