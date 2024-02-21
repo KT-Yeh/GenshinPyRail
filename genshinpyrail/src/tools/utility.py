@@ -113,7 +113,7 @@ async def get_element_img(element):
         return await of.physical
     elif element == "Quantum":
         return await of.quantum
-    elif element == "Thunder":
+    elif element == "Lightning":
         return await of.thunder
     else:
         return await of.wind
