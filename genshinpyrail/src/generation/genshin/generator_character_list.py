@@ -55,7 +55,7 @@ class Creat:
         element_icon = await pill.recolor_image(element_icon.copy().resize((30,30)),(255,255,255,255))
         
         rarity = data.rarity
-        icon = await pill.get_dowload_img(f"https://api.ambr.top/assets/UI/{data.icon.split('character_icon/')[1]}", size = (106,110))
+        icon = await pill.get_dowload_img(data.icon, size = (106,110))
         level = data.level
         friendship = data.friendship
         constellation = data.constellation
@@ -92,7 +92,7 @@ class Creat:
         else:
             rarity = "four"
         
-        self.character_info[data.id] = {"id": data.id, "name": data.name, "rarity": data.rarity, "icon": f"https://api.ambr.top/assets/UI/{data.icon.split('character_icon/')[1]}"}
+        self.character_info[data.id] = {"id": data.id, "name": data.name, "rarity": data.rarity, "icon": data.icon}
         
         self.count[str(rarity)] += 1
         
